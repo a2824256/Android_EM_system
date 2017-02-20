@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/whites" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/mm_listitem"
+        
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/myTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/myTemp"         
+            android:text="@string/user_time"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            android:layout_marginRight="5dp"/>
+
+     
+
+            <TextView
+                android:id="@+id/myTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_font"
+                android:text="温度:30℃"
+                android:layout_toRightOf="@+id/myWeather"
+                android:layout_marginLeft="6sp"
+                android:layout_marginTop="2dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/myHumi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26sp"
+                android:layout_marginRight="10sp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="湿度:60%RH"
+                android:layout_toRightOf="@+id/myTemp"
+                android:layout_alignTop="@+id/myTemp"
+                android:textColor="@color/gray_font"
+                android:textSize="18sp"/>
+             <TextView
+                android:id="@+id/myLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="光照:60Lx"
+                android:layout_alignLeft="@+id/myTemp"
+                android:layout_below="@+id/myTemp"
+                android:textColor="@color/gray_font"
+                android:textSize="18sp"/>
+              <TextView
+                android:id="@+id/myRain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="雨滴:60%"
+                android:layout_toRightOf="@+id/myLight"
+                android:layout_alignTop="@+id/myLight" 
+                android:layout_alignLeft="@+id/myHumi"               
+                android:textColor="@color/gray_font"
+                android:textSize="18sp"/>
+
+              <ImageView
+                  android:id="@+id/myWeather"
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:layout_alignParentLeft="true"
+                  
+                  android:background="@drawable/default_avatar"
+                  android:contentDescription="@string/app_name"
+                  android:scaleType="fitXY"
+                  android:src="@drawable/default_avatar" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

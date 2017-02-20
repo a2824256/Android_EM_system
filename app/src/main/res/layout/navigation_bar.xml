@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <com.example.ennew.BottomSingleView 
+        android:id="@+id/nav_one"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            toolbar:normalBitmap="@drawable/alg"
+            toolbar:pitchBitmap="@drawable/ale"
+            toolbar:text="@string/history"
+            toolbar:alpha="true"
+            toolbar:textColor="#45c01a"  
+            
+            />
+        <com.example.ennew.BottomSingleView 
+        android:id="@+id/nav_two"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            toolbar:textColor="#45c01a"  
+            android:layout_height="match_parent"
+            toolbar:normalBitmap="@drawable/alk"
+            toolbar:pitchBitmap="@drawable/ali"
+            toolbar:text="@string/live"
+            />
+        <com.example.ennew.BottomSingleView 
+        android:id="@+id/nav_three"
+            android:layout_width="0dp"
+            toolbar:textColor="#45c01a"  
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            toolbar:text="@string/about"
+            toolbar:normalBitmap="@drawable/alo"
+            toolbar:pitchBitmap="@drawable/alm"
+            />
+<!--         <com.example.testwechat.BottomSingleView 
+            toolbar:text="@string/me"
+            toolbar:textColor="#45c01a"  
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            toolbar:normalBitmap="@drawable/alo"
+            toolbar:pitchBitmap="@drawable/alm"
+        android:id="@+id/nav_four"
+            /> -->
+</merge>
